@@ -3,133 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urbanisation SI - Distribution Électrique Afrique</title>
+    <title>Masterclass Urbanisation SI - Distribution Électrique Afrique</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Style personnalisé -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-city me-2"></i>Urbanisation SI
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#concepts">Concepts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cas-pratiques">Cas Pratiques</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#outils">Outils</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<i class="fas fa-city me-2"></i>Masterclass Urbanisation SI
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+					<li class="nav-item"><a class="nav-link" href="#concepts">Concepts</a></li>
+					<li class="nav-item"><a class="nav-link" href="#metriques">Métriques</a></li>
+					<li class="nav-item"><a class="nav-link" href="#cas-pratiques">Cas Pratiques</a></li>
+					<li class="nav-item"><a class="nav-link" href="#simulateur">Simulateur</a></li>
+					<li class="nav-item"><a class="nav-link" href="#outils">Outils</a></li>
+					<li class="nav-item"><a class="nav-link" href="#demarches">Démarches</a></li>
+
+					<!-- 🚀 Nouveaux onglets -->
+					<li class="nav-item"><a class="nav-link" href="#comparaison">Comparaison 🆚</a></li>
+					<li class="nav-item"><a class="nav-link" href="#glossaire">Glossaire 📘</a></li>
+					<li class="nav-item"><a class="nav-link" href="#autoformation">Autoformation 🎓</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
 
     <!-- Hero Section -->
     <header class="hero-section" id="accueil">
         <div class="container text-center py-5">
-            <h1 class="display-4 fw-bold mb-4">Urbanisation SI pour la Distribution Électrique en Afrique</h1>
-            <p class="lead mb-4">Maîtrisez l'architecture d'entreprise et l'urbanisation des systèmes d'information dans le secteur de l'énergie</p>
-            <button class="btn btn-primary btn-lg me-2">Commencer la formation</button>
-            <button class="btn btn-outline-light btn-lg">Voir les cas pratiques</button>
+            <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">Urbanisation SI pour la Distribution Électrique en Afrique</h1>
+            <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">Transformez votre SI en atout stratégique pour améliorer la performance opérationnelle et réduire les pertes techniques</p>
+            <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                <button class="btn btn-primary btn-lg me-2">Accéder à la formation</button>
+                <button class="btn btn-outline-light btn-lg">Voir la démo</button>
+            </div>
         </div>
     </header>
 
     <!-- Contenu principal -->
     <main class="container my-5">
-        <!-- Section Concepts -->
-        <section id="concepts" class="mb-5">
-            <h2 class="text-center mb-4"><i class="fas fa-book me-2"></i>Concepts Fondamentaux</h2>
+        <!-- Section Concepts Fondamentaux -->
+        <section id="concepts" class="mb-5 py-4">
+            <h2 class="text-center mb-5 section-title"><i class="fas fa-atom me-2"></i>Concepts Fondamentaux</h2>
             
-            <div class="row">
-                <!-- Cartes concepts -->
-                <div class="col-md-4 mb-4">
+            <div class="row g-4">
+                <!-- Urbanisation SI -->
+                <div class="col-lg-4 col-md-6">
                     <div class="card h-100 concept-card">
+                        <div class="card-header bg-primary text-white">
+                            <h3><i class="fas fa-project-diagram me-2"></i>Urbanisation SI</h3>
+                        </div>
                         <div class="card-body">
-                            <h3 class="card-title">Définition Urbanisation SI</h3>
                             <p class="card-text">Approche méthodologique pour organiser et faire évoluer un système d'information de manière cohérente avec la stratégie métier.</p>
-                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#urbanisationModal">En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 concept-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Architecture d'Entreprise</h3>
-                            <p class="card-text">Discipline qui aligne la stratégie métier, l'organisation et les systèmes d'information pour créer une vision globale et cohérente.</p>
-                            <button class="btn btn-sm btn-outline-primary">En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 concept-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Cadres Méthodologiques</h3>
-                            <p class="card-text">TOGAF, Zachman, ArchiMate... Découvrez les frameworks pour structurer votre démarche d'urbanisation.</p>
-                            <button class="btn btn-sm btn-outline-primary">En savoir plus</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section Cas Pratiques -->
-        <section id="cas-pratiques" class="mb-5">
-            <h2 class="text-center mb-4"><i class="fas fa-bolt me-2"></i>Cas Pratiques - Distribution Électrique</h2>
-            
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-header bg-danger text-white">
-                            <h3>Mauvaises Pratiques</h3>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Silos informatiques dans un distributeur ouest-africain</h4>
-                            <p class="card-text">Étude de cas sur les conséquences d'une absence d'urbanisation : redondance des données, coûts élevés, inefficacité opérationnelle.</p>
+                            <h5 class="mt-4">Dans le secteur électrique :</h5>
                             <ul class="list-group list-group-flush mb-3">
-                                <li class="list-group-item">Impact : +40% de coûts IT</li>
-                                <li class="list-group-item">Délais de mise en marché x3</li>
-                                <li class="list-group-item">Satisfaction client en baisse de 35%</li>
+                                <li class="list-group-item">Gestion des infrastructures critiques</li>
+                                <li class="list-group-item">Intégration des smart grids</li>
+                                <li class="list-group-item">Optimisation du recouvrement</li>
                             </ul>
-                            <button class="btn btn-sm btn-outline-danger">Voir l'étude</button>
+                            <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#urbanisationModal">Détails</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                <!-- Architecture d'Entreprise -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 concept-card">
                         <div class="card-header bg-success text-white">
-                            <h3>Bonnes Pratiques</h3>
+                            <h3><i class="fas fa-chess-board me-2"></i>Architecture d'Entreprise</h3>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Transformation réussie d'un opérateur électrique</h4>
-                            <p class="card-text">Comment une approche d'urbanisation a permis une meilleure gestion du réseau, une réduction des pertes techniques et une amélioration de la facturation.</p>
+                            <p class="card-text">Discipline qui aligne la stratégie métier, l'organisation et les systèmes d'information pour créer une vision globale et cohérente.</p>
+                            <h5 class="mt-4">Enjeux africains :</h5>
                             <ul class="list-group list-group-flush mb-3">
-                                <li class="list-group-item">Gain : 15% d'efficacité opérationnelle</li>
-                                <li class="list-group-item">Réduction de 25% des pertes techniques</li>
-                                <li class="list-group-item">ROI en 3 ans</li>
+                                <li class="list-group-item">Adaptation aux contraintes locales</li>
+                                <li class="list-group-item">Solutions hybrides (cloud/on-premise)</li>
+                                <li class="list-group-item">Gouvernance des données</li>
                             </ul>
-                            <button class="btn btn-sm btn-outline-success">Voir l'étude</button>
+                          
+							<button class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#architectureModal">Détails</button>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cadres Méthodologiques -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 concept-card">
+                        <div class="card-header bg-info text-white">
+                            <h3><i class="fas fa-tools me-2"></i>Cadres Méthodologiques</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Frameworks pour structurer votre démarche d'urbanisation et d'architecture.</p>
+                            <h5 class="mt-4">Comparatif :</h5>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">TOGAF - Approche globale</li>
+                                <li class="list-group-item">ArchiMate - Modélisation</li>
+                                <li class="list-group-item">Zachman - Cadre de référence</li>
+                                <li class="list-group-item">BPMN - Processus métier</li>
+                            </ul>
+                           
+							<button class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#frameworksModal">Détails</button>
+
                         </div>
                     </div>
                 </div>
@@ -137,51 +127,1125 @@
         </section>
 
         <!-- Section Métriques -->
-        <section id="metriques" class="mb-5">
-            <h2 class="text-center mb-4"><i class="fas fa-chart-line me-2"></i>Métriques Clés</h2>
+        <section id="metriques" class="mb-5 py-4">
+            <h2 class="text-center mb-5 section-title"><i class="fas fa-chart-pie me-2"></i>Top 40 Métriques par Catégorie</h2>
+            
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs" id="metricsTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="technical-tab" data-bs-toggle="tab" data-bs-target="#technical" type="button">Techniques</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="economic-tab" data-bs-toggle="tab" data-bs-target="#economic" type="button">Économiques</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button">Métier</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="governance-tab" data-bs-toggle="tab" data-bs-target="#governance" type="button">Gouvernance</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content p-3 border border-top-0 rounded-bottom" id="metricsTabContent">
+                        <!-- Onglet Métriques Techniques -->
+                        <div class="tab-pane fade show active" id="technical" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Métrique</th>
+                                            <th>Description</th>
+                                            <th>Cible</th>
+                                            <th>Impact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Taux de disponibilité SI</td>
+                                            <td>% de temps où les systèmes critiques sont opérationnels</td>
+                                            <td>> 99.5%</td>
+                                            <td>Impact direct sur la continuité de service</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Temps moyen de résolution incidents</td>
+                                            <td>Délai moyen pour résoudre un incident IT</td>
+                                            <td>< 4h</td>
+                                            <td>Réduction des pertes d'exploitation</td>
+                                        </tr>
+                                        <!-- Ajouter les autres métriques techniques -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Onglet Métriques Économiques -->
+                        <div class="tab-pane fade" id="economic" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Métrique</th>
+                                            <th>Description</th>
+                                            <th>Cible</th>
+                                            <th>Impact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Coût total de possession (TCO)</td>
+                                            <td>Coût complet du SI sur 5 ans</td>
+                                            <td>< 7% du CA</td>
+                                            <td>Maîtrise des dépenses IT</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ROI des projets</td>
+                                            <td>Retour sur investissement des projets IT</td>
+                                            <td>> 15%</td>
+                                            <td>Justification des investissements</td>
+                                        </tr>
+                                        <!-- Ajouter les autres métriques économiques -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Onglet Métriques Métier -->
+                        <div class="tab-pane fade" id="business" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Métrique</th>
+                                            <th>Description</th>
+                                            <th>Cible</th>
+                                            <th>Impact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Pertes techniques</td>
+                                            <td>% d'énergie perdue dans le réseau</td>
+                                            <td>< 12%</td>
+                                            <td>Efficacité opérationnelle</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Taux de recouvrement</td>
+                                            <td>% des factures effectivement payées</td>
+                                            <td>> 92%</td>
+                                            <td>Santé financière</td>
+                                        </tr>
+                                        <!-- Ajouter les autres métriques métier -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Onglet Métriques Gouvernance -->
+                        <div class="tab-pane fade" id="governance" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Métrique</th>
+                                            <th>Description</th>
+                                            <th>Cible</th>
+                                            <th>Impact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>% processus standardisés</td>
+                                            <td>Processus documentés et harmonisés</td>
+                                            <td>> 80%</td>
+                                            <td>Efficience organisationnelle</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Conformité réglementaire</td>
+                                            <td>% d'exigences réglementaires couvertes</td>
+                                            <td>100%</td>
+                                            <td>Réduction des risques</td>
+                                        </tr>
+                                        <!-- Ajouter les autres métriques gouvernance -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h4>Analyse Comparative des Métriques</h4>
+                        </div>
                         <div class="card-body">
-                            <h3 class="card-title">Indicateurs de Performance</h3>
-                            <canvas id="performanceChart" height="200"></canvas>
+                            <canvas id="metricsComparisonChart" height="250"></canvas>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h4>Impact des Métriques Clés</h4>
+                        </div>
                         <div class="card-body">
-                            <h3 class="card-title">ROI de l'Urbanisation</h3>
-                            <canvas id="roiChart" height="200"></canvas>
+                            <canvas id="metricsImpactChart" height="250"></canvas>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+		
+		
+		<section id="comparaison" class="py-5">
+			<h2 class="text-center mb-4"><i class="fas fa-balance-scale me-2"></i>Comparaison Avant / Après Urbanisation</h2>
+			<p class="lead text-center">Découvrez les transformations concrètes apportées par l’urbanisation des systèmes d'information à travers une analyse comparative détaillée.</p>
+
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped text-center align-middle">
+					<thead class="table-primary">
+						<tr>
+							<th>🌐 Domaine</th>
+							<th>🚫 Avant Urbanisation</th>
+							<th>✅ Après Urbanisation</th>
+							<th>🔍 Exemple Concret</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Architecture SI</td>
+							<td>Systèmes en silos 🧱</td>
+							<td>Architecture modulaire 🧩</td>
+							<td>Passage d'une app monolithique à des microservices</td>
+						</tr>
+						<tr>
+							<td>Données</td>
+							<td>Dédoublonnées, incohérentes 😵‍💫</td>
+							<td>Référentiel unique 📘</td>
+							<td>Un client = 1 fiche client centralisée</td>
+						</tr>
+						<tr>
+							<td>Intégration</td>
+							<td>Interfaces manuelles 📄</td>
+							<td>Interopérabilité via API 🔗</td>
+							<td>Connexion CRM ⇄ ERP via REST</td>
+						</tr>
+						<tr>
+							<td>Agilité</td>
+							<td>Cycles longs et rigides 🐢</td>
+							<td>Déploiements itératifs ⚡</td>
+							<td>Déploiement de MVP tous les 2 mois</td>
+						</tr>
+						<tr>
+							<td>Coûts</td>
+							<td>Élevés 💸 (8% CA)</td>
+							<td>Maîtrisés 💰 (5% CA)</td>
+							<td>Optimisation du parc applicatif (-40%)</td>
+						</tr>
+						<tr>
+							<td>Expérience utilisateur</td>
+							<td>Incohérente, dégradée 😠</td>
+							<td>Uniformisée, fluide 😊</td>
+							<td>Portail client unifié avec SSO</td>
+						</tr>
+						<tr>
+							<td>Décisionnel</td>
+							<td>Peu de visibilité 📉</td>
+							<td>Dashboards en temps réel 📊</td>
+							<td>Reporting journalier pour DG</td>
+						</tr>
+						<tr>
+							<td>Cybersécurité</td>
+							<td>Failles multiples 🛑</td>
+							<td>Architecture Zero Trust 🔒</td>
+							<td>IAM centralisé avec Keycloak</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		
+		
+		<section id="glossaire" class="py-5 bg-light">
+			<h2 class="text-center mb-4"><i class="fas fa-book me-2"></i>Glossaire des Termes Clés en Urbanisation</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<dl>
+						<dt>Urbanisation</dt>
+						<dd>Organisation structurée et évolutive du SI pour répondre aux besoins métiers.</dd>
+
+						<dt>Architecture cible</dt>
+						<dd>Modèle futur du SI, aligné avec la stratégie d’entreprise.</dd>
+
+						<dt>Référentiel</dt>
+						<dd>Base de données maître (client, produit, contrat...) utilisée par tous les systèmes.</dd>
+
+						<dt>ESB (Enterprise Service Bus)</dt>
+						<dd>Bus d’échange entre applications pour centraliser les flux.</dd>
+
+						<dt>TOGAF</dt>
+						<dd>Cadre de référence pour concevoir, piloter et faire évoluer l’architecture d’entreprise.</dd>
+					</dl>
+				</div>
+				<div class="col-md-6">
+					<dl>
+						<dt>ArchiMate</dt>
+						<dd>Langage de modélisation pour représenter l’architecture d’entreprise.</dd>
+
+						<dt>SOA (Service Oriented Architecture)</dt>
+						<dd>Organisation du SI autour de services réutilisables.</dd>
+
+						<dt>API</dt>
+						<dd>Interface logicielle permettant à deux systèmes de communiquer.</dd>
+
+						<dt>IAM (Identity and Access Management)</dt>
+						<dd>Système de gestion des identités et droits d’accès.</dd>
+
+						<dt>Cycle de vie applicatif</dt>
+						<dd>Étapes de création, exploitation, évolution, retrait d'une application.</dd>
+					</dl>
+				</div>
+			</div>
+		</section>
+
+		<section id="autoformation" class="py-5">
+			<h2 class="text-center mb-4"><i class="fas fa-graduation-cap me-2"></i>Parcours d’Autoformation 🎓</h2>
+			<p class="lead text-center">Renforcez vos compétences à votre rythme grâce à ces modules pédagogiques en ligne, accessibles gratuitement.</p>
+
+			<div class="row g-4">
+				<!-- Module 1 -->
+				<div class="col-md-4">
+					<div class="card h-100 border-success text-center">
+						<div class="card-body">
+							<h5 class="card-title">🧱 Module 1 : Fondamentaux de l'Urbanisation</h5>
+							<p class="card-text">Comprendre les enjeux, principes, bénéfices et vocabulaire de base.</p>
+							<ul class="list-unstyled small">
+								<li><i class="fas fa-check-circle text-success me-1"></i> Architecture logique vs physique</li>
+								<li><i class="fas fa-check-circle text-success me-1"></i> Urbanisation fonctionnelle</li>
+								<li><i class="fas fa-check-circle text-success me-1"></i> Couches du SI</li>
+							</ul>
+							<a href="#" class="btn btn-outline-success btn-sm">Démarrer le module</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Module 2 -->
+				<div class="col-md-4">
+					<div class="card h-100 border-primary text-center">
+						<div class="card-body">
+							<h5 class="card-title">🛠️ Module 2 : Outils et Méthodes</h5>
+							<p class="card-text">Approfondir TOGAF, ArchiMate, BPMN, et la modélisation d'architecture cible.</p>
+							<ul class="list-unstyled small">
+								<li><i class="fas fa-check-circle text-primary me-1"></i> ADM (Architecture Development Method)</li>
+								<li><i class="fas fa-check-circle text-primary me-1"></i> Cartographie applicative</li>
+								<li><i class="fas fa-check-circle text-primary me-1"></i> Diagrammes ArchiMate</li>
+							</ul>
+							<a href="#" class="btn btn-outline-primary btn-sm">Démarrer le module</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Module 3 -->
+				<div class="col-md-4">
+					<div class="card h-100 border-info text-center">
+						<div class="card-body">
+							<h5 class="card-title">📊 Module 3 : Métriques et Simulation</h5>
+							<p class="card-text">Savoir mesurer l’impact d’une urbanisation et simuler des scénarios avant/après.</p>
+							<ul class="list-unstyled small">
+								<li><i class="fas fa-check-circle text-info me-1"></i> KPI SI et métier</li>
+								<li><i class="fas fa-check-circle text-info me-1"></i> Visualisation de performance</li>
+								<li><i class="fas fa-check-circle text-info me-1"></i> ROI et coût évité</li>
+							</ul>
+							<a href="#" class="btn btn-outline-info btn-sm">Démarrer le module</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-5">
+				<a href="#" class="btn btn-dark btn-lg"><i class="fas fa-download me-2"></i>Télécharger le Guide PDF Complet</a>
+			</div>
+		</section>
+
+
+        <!-- Section Cas Pratiques -->
+        <section id="cas-pratiques" class="mb-5 py-4">
+            <h2 class="text-center mb-5 section-title"><i class="fas fa-lightbulb me-2"></i>Cas Pratiques avec Leçons Tirées</h2>
+            
+            <div class="row g-4">
+                <!-- Mauvaises Pratiques -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-danger">
+                        <div class="card-header bg-danger text-white">
+                            <h3><i class="fas fa-exclamation-triangle me-2"></i>Mauvaises Pratiques</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion" id="badPracticesAccordion">
+                                <!-- Cas 1 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-light text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#case1">
+                                            Cas 1 : Silos informatiques dans un distributeur ouest-africain
+                                        </button>
+                                    </h2>
+                                    <div id="case1" class="accordion-collapse collapse" data-bs-parent="#badPracticesAccordion">
+                                        <div class="accordion-body">
+                                            <h5>Contexte :</h5>
+                                            <p>5 systèmes indépendants pour la gestion client, facturation, comptage, recouvrement et maintenance.</p>
+                                            
+                                            <h5>Problèmes :</h5>
+                                            <ul>
+                                                <li>Données incohérentes entre systèmes</li>
+                                                <li>Processus manuels d'intégration</li>
+                                                <li>Reporting complexe et peu fiable</li>
+                                            </ul>
+                                            
+                                            <h5>Impacts :</h5>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card bg-light mb-2">
+                                                        <div class="card-body p-2">
+                                                            <small class="text-danger">+40% de coûts IT</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card bg-light mb-2">
+                                                        <div class="card-body p-2">
+                                                            <small class="text-danger">Délais x3 pour les nouveaux services</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <h5>Leçons :</h5>
+                                            <ol>
+                                                <li>Nécessité d'une vision globale du SI</li>
+                                                <li>Importance des interfaces normalisées</li>
+                                                <li>Gouvernance des données essentielle</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Cas 2 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-light text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#case2">
+                                            Cas 2 : Échec d'un projet de compteurs intelligents
+                                        </button>
+                                    </h2>
+                                    <div id="case2" class="accordion-collapse collapse" data-bs-parent="#badPracticesAccordion">
+                                        <div class="accordion-body">
+                                            <!-- Contenu  cas 2 -->
+											
+											<h5>Contexte :</h5>
+											<p>Lancement d'un projet de déploiement de compteurs intelligents dans 3 grandes villes sans gouvernance claire.</p>
+
+											<h5>Problèmes :</h5>
+											<ul>
+											  <li>Absence de référentiel unique client</li>
+											  <li>Données non fiabilisées = erreurs de facturation</li>
+											  <li>Sous-estimation des impacts sur la DSI</li>
+											</ul>
+
+											<h5>Impacts :</h5>
+											<ul>
+											  <li><span class="text-danger">Projet suspendu après 18 mois</span></li>
+											  <li><span class="text-danger">Confiance client dégradée</span></li>
+											</ul>
+
+											<h5>Leçons :</h5>
+											<ol>
+											  <li>Importance d'une phase pilote bien cadrée</li>
+											  <li>Coordination entre métiers, IT, et juridique</li>
+											  <li>Préparation des données en amont</li>
+											</ol>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bonnes Pratiques -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-success">
+                        <div class="card-header bg-success text-white">
+                            <h3><i class="fas fa-check-circle me-2"></i>Bonnes Pratiques</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion" id="goodPracticesAccordion">
+                                <!-- Cas 1 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-light text-success" type="button" data-bs-toggle="collapse" data-bs-target="#case3">
+                                            Cas 3 : Transformation réussie d'un opérateur électrique
+                                        </button>
+                                    </h2>
+                                    <div id="case3" class="accordion-collapse collapse" data-bs-parent="#goodPracticesAccordion">
+                                        <div class="accordion-body">
+                                            <h5>Contexte :</h5>
+                                            <p>Modernisation complète du SI d'un distributeur avec 2M de clients.</p>
+                                            
+                                            <h5>Approche :</h5>
+                                            <ul>
+                                                <li>Urbanisation par couches métier</li>
+                                                <li>Référentiel client unique</li>
+                                                <li>API Gateway pour l'intégration</li>
+                                            </ul>
+                                            
+                                            <h5>Résultats :</h5>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card bg-light mb-2">
+                                                        <div class="card-body p-2">
+                                                            <small class="text-success">15% d'efficacité opérationnelle</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card bg-light mb-2">
+                                                        <div class="card-body p-2">
+                                                            <small class="text-success">25% de réduction des pertes</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <h5>Clés du succès :</h5>
+                                            <ol>
+                                                <li>Implication forte de la direction</li>
+                                                <li>Approche progressive par valeur métier</li>
+                                                <li>Formation intensive des équipes</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Cas 2 -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-light text-success" type="button" data-bs-toggle="collapse" data-bs-target="#case4">
+                                            Cas 4 : Plateforme de données unifiée
+                                        </button>
+                                    </h2>
+                                    <div id="case4" class="accordion-collapse collapse" data-bs-parent="#goodPracticesAccordion">
+                                        <div class="accordion-body">
+                                            <!-- Contenu similaire au cas 3 -->
+											
+											<h5>Contexte :</h5>
+											<p>Projet de consolidation de toutes les données client/facturation/recouvrement dans une plateforme cloud.</p>
+
+											<h5>Approche :</h5>
+											<ul>
+											  <li>Data Lake unifié avec gouvernance centralisée</li>
+											  <li>Intégration via API sécurisées</li>
+											  <li>Dashboards en temps réel pour les managers</li>
+											</ul>
+
+											<h5>Résultats :</h5>
+											<ul>
+											  <li><span class="text-success">-20% pertes techniques</span></li>
+											  <li><span class="text-success">+35% efficacité des campagnes de relance</span></li>
+											</ul>
+
+											<h5>Clés du succès :</h5>
+											<ol>
+											  <li>Architecture data pensée dès le départ</li>
+											  <li>Formation utilisateurs sur la data literacy</li>
+											  <li>Suivi rigoureux des indicateurs</li>
+											</ol>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Simulateur -->
+        <section id="simulateur" class="mb-5 py-4 bg-light rounded">
+            <h2 class="text-center mb-5 section-title"><i class="fas fa-calculator me-2"></i>Simulateur Avant/Après</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h4>Paramètres du Scénario</h4>
+                        </div>
+                        <div class="card-body">
+                            <form id="simulatorForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Sélectionnez un cas type :</label>
+                                    <select class="form-select" id="scenarioSelect">
+                                        <option value="1">1. Intégration des systèmes de facturation</option>
+                                        <option value="2">2. Modernisation du système de comptage</option>
+                                        <option value="3">3. Centralisation des données clients</option>
+                                        <option value="4">4. Automatisation des processus métier</option>
+                                        <option value="5">5. Gestion des interventions terrain</option>
+                                        <option value="6">6. Optimisation du recouvrement</option>
+                                        <option value="7">7. Plateforme analytique prédictive</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">Nombre de clients :</label>
+                                    <input type="range" class="form-range" min="100000" max="5000000" step="100000" id="clientRange">
+                                    <div class="d-flex justify-content-between">
+                                        <small>100,000</small>
+                                        <small id="clientValue">1,000,000</small>
+                                        <small>5,000,000</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">Niveau actuel de maturité :</label>
+                                    <select class="form-select" id="maturitySelect">
+                                        <option value="1">1 - Silos informatiques</option>
+                                        <option value="2">2 - Intégrations ponctuelles</option>
+                                        <option value="3">3 - Architecture partielle</option>
+                                        <option value="4">4 - Urbanisation en cours</option>
+                                        <option value="5">5 - SI optimisé</option>
+                                    </select>
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary" id="runSimulation">
+                                    <i class="fas fa-play me-2"></i>Lancer la simulation
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h4>Résultats de la Simulation</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="simulationResults" class="text-center py-4">
+                                <p class="text-muted">Sélectionnez des paramètres et lancez la simulation pour voir les résultats</p>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-body text-center">
+                                            <h6>Coût actuel</h6>
+                                            <h4 id="currentCost" class="text-danger">--</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card bg-light mb-3">
+                                        <div class="card-body text-center">
+                                            <h6>Coût après urbanisation</h6>
+                                            <h4 id="optimizedCost" class="text-success">--</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <canvas id="simulationChart" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-info text-white">
+                            <h4>Détails des 7 Cas Réalistes</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Cas</th>
+                                            <th>Description</th>
+                                            <th>Gains Potentiels</th>
+                                            <th>Investissement</th>
+                                            <th>ROI</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. Intégration facturation</td>
+                                            <td>Unification des systèmes de facturation</td>
+                                            <td>15-25% réduction coûts</td>
+                                            <td>Moyen</td>
+                                            <td>2-3 ans</td>
+                                        </tr>
+                                        <!-- Ajouter les 6 autres cas -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Outils -->
+        <section id="outils" class="mb-5 py-4">
+            <h2 class="text-center mb-5 section-title"><i class="fas fa-toolbox me-2"></i>Boîte à Outils Complète</h2>
+            
+            <div class="row g-4">
+                <!-- Outil 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-box bg-primary text-white mb-3">
+                                <i class="fas fa-map fa-2x"></i>
+                            </div>
+                            <h4>Cartographie</h4>
+                            <ul class="list-unstyled">
+                                <li>ArchiMate</li>
+                                <li>LeanIX</li>
+                                <li>MEGA</li>
+                                <li>Alfabet</li>
+                            </ul>
+                            <button class="btn btn-sm btn-outline-primary">Comparer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Outil 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-box bg-success text-white mb-3">
+                                <i class="fas fa-project-diagram fa-2x"></i>
+                            </div>
+                            <h4>Modélisation</h4>
+                            <ul class="list-unstyled">
+                                <li>Enterprise Architect</li>
+                                <li>Visual Paradigm</li>
+                                <li>Lucidchart</li>
+                                <li>BizzDesign</li>
+                            </ul>
+                            <button class="btn btn-sm btn-outline-success">Comparer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Outil 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-box bg-info text-white mb-3">
+                                <i class="fas fa-plug fa-2x"></i>
+                            </div>
+                            <h4>Intégration</h4>
+                            <ul class="list-unstyled">
+                                <li>MuleSoft</li>
+                                <li>WSO2</li>
+                                <li>Dell Boomi</li>
+                                <li>Apache Camel</li>
+                            </ul>
+                            <button class="btn btn-sm btn-outline-info">Comparer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Outil 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-box bg-warning text-white mb-3">
+                                <i class="fas fa-database fa-2x"></i>
+                            </div>
+                            <h4>Données</h4>
+                            <ul class="list-unstyled">
+                                <li>Collibra</li>
+                                <li>Informatica</li>
+                                <li>Talend</li>
+                                <li>Apache Atlas</li>
+                            </ul>
+                            <button class="btn btn-sm btn-outline-warning">Comparer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h4>Matrice de Sélection d'Outils</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Critère</th>
+                                            <th>Poids</th>
+                                            <th>Outil 1</th>
+                                            <th>Outil 2</th>
+                                            <th>Outil 3</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Adaptation contexte africain</td>
+                                            <td>30%</td>
+                                            <td>4/5</td>
+                                            <td>3/5</td>
+                                            <td>5/5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coût total de possession</td>
+                                            <td>25%</td>
+                                            <td>3/5</td>
+                                            <td>4/5</td>
+                                            <td>5/5</td>
+                                        </tr>
+                                        <!-- Ajouter d'autres critères -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Démarches et Bonnes Pratiques -->
+        <section id="demarches" class="mb-5 py-4 bg-light rounded">
+            <h2 class="text-center mb-5 section-title"><i class="fas fa-road me-2"></i>Démarches et Bonnes Pratiques</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                  <div class="card mb-4">
+					<div class="card-header bg-primary text-white">
+						<h4>Feuille de Route d'Urbanisation</h4>
+					</div>
+					<div class="card-body">
+						<ol class="roadmap-list">
+							<!-- Étape 1 -->
+							<li>
+								<h5>Étape 1 : Évaluation Initiale</h5>
+								<p>Comprendre l'existant pour poser les bases de la transformation.</p>
+								<ul>
+									<li>Cartographie des applications, processus et flux</li>
+									<li>Recensement des outils, bases de données, référentiels</li>
+									<li>Analyse des doublons, redondances et obsolescences</li>
+									<li>Benchmark sectoriel (autres distributeurs d’électricité)</li>
+								</ul>
+							</li>
+
+							<!-- Étape 2 -->
+							<li>
+								<h5>Étape 2 : Définition de la Cible</h5>
+								<p>Définir une architecture cible alignée avec les enjeux métiers et SI.</p>
+								<ul>
+									<li>Modélisation fonctionnelle, applicative et technique cible</li>
+									<li>Définition de principes d’urbanisation (couches, zones, blocs)</li>
+									<li>Scénarios d’évolution possibles et trajectoires</li>
+								</ul>
+							</li>
+
+							<!-- Étape 3 -->
+							<li>
+								<h5>Étape 3 : Alignement Stratégique</h5>
+								<p>Assurer l’adhésion de la direction et des métiers aux orientations SI.</p>
+								<ul>
+									<li>Organisation d’ateliers de co-construction</li>
+									<li>Formalisation de la vision commune cible</li>
+									<li>Validation politique de la trajectoire</li>
+								</ul>
+							</li>
+
+							<!-- Étape 4 -->
+							<li>
+								<h5>Étape 4 : Planification des Projets Prioritaires</h5>
+								<p>Traduire l’urbanisation en projets concrets avec un plan d’action réaliste.</p>
+								<ul>
+									<li>Identification des quick wins et chantiers stratégiques</li>
+									<li>Évaluation coûts / bénéfices / risques</li>
+									<li>Élaboration du schéma directeur urbanisation SI</li>
+								</ul>
+							</li>
+
+							<!-- Étape 5 -->
+							<li>
+								<h5>Étape 5 : Gouvernance et Pilotage</h5>
+								<p>Mettre en place les instances de pilotage et les règles d’urbanisation.</p>
+								<ul>
+									<li>Création d’un comité d’urbanisation transverse</li>
+									<li>Définition des rôles : architectes, métiers, sponsors</li>
+									<li>Charte de gouvernance des données et des intégrations</li>
+								</ul>
+							</li>
+
+							<!-- Étape 6 -->
+							<li>
+								<h5>Étape 6 : Mise en Œuvre Progressive</h5>
+								<p>Lancer les projets de transformation selon un principe d’agilité et de valeur.</p>
+								<ul>
+									<li>Urbanisation par couches (données, métier, applicatif, technique)</li>
+									<li>Méthodologie agile ou incrémentale</li>
+									<li>Intégration continue avec contrôle qualité</li>
+								</ul>
+							</li>
+
+							<!-- Étape 7 -->
+							<li>
+								<h5>Étape 7 : Évaluation Continue et Amélioration</h5>
+								<p>Mesurer l’impact et adapter en continu l’urbanisation.</p>
+								<ul>
+									<li>Suivi des indicateurs clés de performance (KPI)</li>
+									<li>Feedback des utilisateurs et des directions</li>
+									<li>Révision annuelle du schéma directeur SI</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</div>
+
+
+                </div>
+                
+                <div class="col-lg-6">
+					<!-- Checklist des Bonnes Pratiques -->
+					<div class="card mb-4">
+						<div class="card-header bg-success text-white">
+							<h4>Checklist des Bonnes Pratiques</h4>
+						</div>
+						<div class="card-body">
+							<div class="accordion" id="bestPracticesAccordion">
+								<!-- Bloc Gouvernance -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bp1">
+											Gouvernance
+										</button>
+									</h2>
+									<div id="bp1" class="accordion-collapse collapse show" data-bs-parent="#bestPracticesAccordion">
+										<div class="accordion-body">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Comité de pilotage impliquant la direction générale
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Définition claire des rôles, responsabilités et niveaux de décision
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Mise en place d’une charte d’urbanisation
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Indicateurs de performance liés à l’urbanisation
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!-- Bloc Méthodologie -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bp2">
+											Méthodologie
+										</button>
+									</h2>
+									<div id="bp2" class="accordion-collapse collapse" data-bs-parent="#bestPracticesAccordion">
+										<div class="accordion-body">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Adoption de frameworks reconnus (TOGAF, ArchiMate, BPMN)
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Approche agile ou incrémentale dans les projets d’urbanisation
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Ateliers de co-construction avec les métiers
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Gestion du cycle de vie des référentiels et modèles
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!-- Bloc Données -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bp3">
+											Données
+										</button>
+									</h2>
+									<div id="bp3" class="accordion-collapse collapse" data-bs-parent="#bestPracticesAccordion">
+										<div class="accordion-body">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Mise en place d’un référentiel client unique
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Gouvernance des données (data owners, qualité, règles)
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Mise en œuvre d’un dictionnaire de données
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Surveillance de la qualité et cohérence inter-systèmes
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!-- Bloc Intégration et Interopérabilité -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bp4">
+											Intégration et Interopérabilité
+										</button>
+									</h2>
+									<div id="bp4" class="accordion-collapse collapse" data-bs-parent="#bestPracticesAccordion">
+										<div class="accordion-body">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Mise en place d’une API Gateway / ESB
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Normalisation des formats d’échange (JSON, XML, etc.)
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Documentation des APIs exposées et consommées
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Tests systématiques de non-régression à chaque intégration
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!-- Bloc Accompagnement au Changement -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bp5">
+											Accompagnement au Changement
+										</button>
+									</h2>
+									<div id="bp5" class="accordion-collapse collapse" data-bs-parent="#bestPracticesAccordion">
+										<div class="accordion-body">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Plan de formation pour les utilisateurs métiers et IT
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Communication régulière sur les avancées et bénéfices
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Identification d’ambassadeurs de la transformation
+												</li>
+												<li class="list-group-item">
+													<input class="form-check-input me-2" type="checkbox">
+													Système de feedback et remontée des irritants
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pièges à Éviter -->
+					<div class="card">
+						<div class="card-header bg-info text-white">
+							<h4>Pièges à Éviter</h4>
+						</div>
+						<div class="card-body">
+							<div class="alert alert-warning">
+								<i class="fas fa-exclamation-triangle me-2"></i>
+								<strong>Approche trop technocentrée</strong> – Ne pas oublier l’alignement métier dès le début.
+							</div>
+							<div class="alert alert-warning">
+								<i class="fas fa-exclamation-triangle me-2"></i>
+								<strong>Manque d’implication des équipes</strong> – La résistance au changement est le premier facteur d’échec.
+							</div>
+							<div class="alert alert-warning">
+								<i class="fas fa-exclamation-triangle me-2"></i>
+								<strong>Urbanisation en silo</strong> – Chaque domaine doit être intégré à une vision d’ensemble.
+							</div>
+							<div class="alert alert-warning">
+								<i class="fas fa-exclamation-triangle me-2"></i>
+								<strong>Sous-estimation des données</strong> – Une mauvaise qualité de données compromet toute architecture.
+							</div>
+							<div class="alert alert-warning">
+								<i class="fas fa-exclamation-triangle me-2"></i>
+								<strong>Absence de gouvernance continue</strong> – L’urbanisation n’est pas un projet, mais un processus vivant.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4" id="contact">
+    <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-4 mb-4">
+                    <h3><i class="fas fa-city me-2"></i>Urbanisation SI Afrique</h3>
+                    <p>Plateforme complète d'autoformation en urbanisation des systèmes d'information spécialisée pour le secteur de la distribution électrique en Afrique.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Ressources</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Livres blancs</a></li>
+                        <li><a href="#" class="text-white">Modèles et templates</a></li>
+                        <li><a href="#" class="text-white">Webinaires</a></li>
+                        <li><a href="#" class="text-white">Glossaire</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
                     <h3>Contact</h3>
                     <p><i class="fas fa-envelope me-2"></i>contact@urbanisation-si-afrique.com</p>
                     <p><i class="fas fa-phone me-2"></i>+221 77 123 45 67</p>
-                </div>
-                <div class="col-md-6">
-                    <h3>Newsletter</h3>
-                    <form class="mb-3">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Votre email">
-                            <button class="btn btn-primary" type="submit">S'abonner</button>
-                        </div>
-                    </form>
-                    <div class="social-icons">
-                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
                     </div>
                 </div>
             </div>
@@ -196,28 +1260,135 @@
     <div class="modal fade" id="urbanisationModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Urbanisation des SI - Définition Complète</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Urbanisation des SI - Approfondissement</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>L'urbanisation des systèmes d'information est une approche qui s'inspire de l'urbanisme des villes pour organiser, structurer et faire évoluer le système d'information d'une entreprise.</p>
-                    <h6>Principes clés :</h6>
-                    <ul>
-                        <li>Décomposition en zones, quartiers et îlots</li>
-                        <li>Définition claire des interfaces et flux</li>
-                        <li>Gouvernance et règles d'évolution</li>
-                        <li>Alignement avec la stratégie métier</li>
-                    </ul>
-                    <h6>Dans le secteur électrique africain :</h6>
-                    <p>L'urbanisation permet de mieux gérer les systèmes souvent hétérogènes hérités de différentes vagues d'investissements, tout en préparant l'intégration des nouvelles technologies (smart grids, compteurs intelligents, énergies renouvelables).</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Principes Fondamentaux</h5>
+                            <ul>
+                                <li>Modularité et découpage en blocs</li>
+                                <li>Interfaces standardisées</li>
+                                <li>Évolutivité contrôlée</li>
+                                <li>Alignement métier/IT</li>
+                            </ul>
+                            
+                            <h5 class="mt-4">Pourquoi urbaniser ?</h5>
+                            <div class="alert alert-primary">
+                                <i class="fas fa-bolt me-2"></i>
+                                <strong>Dans le secteur électrique :</strong> Gérer la complexité croissante des systèmes, intégrer les nouvelles technologies (smart grids, énergies renouvelables), et améliorer l'efficacité opérationnelle.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Bénéfices Attendus</h5>
+                            <div class="card bg-light mb-3">
+                                <div class="card-body">
+                                    <h6><i class="fas fa-chart-line text-primary me-2"></i>Performance</h6>
+                                    <small>+20 à 30% d'efficacité opérationnelle</small>
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3">
+                                <div class="card-body">
+                                    <h6><i class="fas fa-money-bill-wave text-success me-2"></i>Économique</h6>
+                                    <small>15-25% de réduction des coûts IT à moyen terme</small>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6><i class="fas fa-shield-alt text-info me-2"></i>Robustesse</h6>
+                                    <small>Amélioration de la résilience et de la sécurité</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Accéder au module complet</button>
                 </div>
             </div>
         </div>
     </div>
+	
+	
+	<!-- ArchitectureModal -->
+  <div class="modal fade" id="architectureModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">Architecture d'Entreprise - Approfondissement</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Cadres de Référence</h5>
+          <ul>
+            <li>TOGAF (ADM, Capability Map, etc.)</li>
+            <li>ArchiMate (modélisation des couches métier, applicative, technique)</li>
+            <li>COBIT & ITIL pour gouvernance et exploitation</li>
+          </ul>
+          <h5>En Afrique :</h5>
+          <ul>
+            <li>Priorité aux architectures hybrides (on-premise + cloud)</li>
+            <li>Adaptation aux contextes de faible connectivité</li>
+            <li>Valorisation des données pour pilotage et régulation</li>
+          </ul>
+          <div class="alert alert-success"><strong>Résultat :</strong> Vision unifiée, alignement stratégique, anticipation des évolutions.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FrameworksModal -->
+  <div class="modal fade" id="frameworksModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-info text-white">
+          <h5 class="modal-title">Cadres Méthodologiques - Détails Comparés</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>Cadre</th>
+                <th>Objectif</th>
+                <th>Forces</th>
+                <th>Limites</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TOGAF</td>
+                <td>Cadre global d’architecture</td>
+                <td>Structuration ADM, complète</td>
+                <td>Complexe à implémenter sans accompagnement</td>
+              </tr>
+              <tr>
+                <td>ArchiMate</td>
+                <td>Modélisation des architectures</td>
+                <td>Standard visuel, interopérable avec TOGAF</td>
+                <td>Nécessite une formation initiale</td>
+              </tr>
+              <tr>
+                <td>Zachman</td>
+                <td>Tableau de classification</td>
+                <td>Vision exhaustive, adaptée à l’analyse</td>
+                <td>Pas orienté transformation</td>
+              </tr>
+              <tr>
+                <td>BPMN</td>
+                <td>Modélisation des processus</td>
+                <td>Facilement compréhensible par les métiers</td>
+                <td>Limitée à la couche processus</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
