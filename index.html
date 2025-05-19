@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbanisation SI - Distribution Électrique Afrique</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style personnalisé -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-city me-2"></i>Urbanisation SI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#concepts">Concepts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cas-pratiques">Cas Pratiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#outils">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="accueil">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold mb-4">Urbanisation SI pour la Distribution Électrique en Afrique</h1>
+            <p class="lead mb-4">Maîtrisez l'architecture d'entreprise et l'urbanisation des systèmes d'information dans le secteur de l'énergie</p>
+            <button class="btn btn-primary btn-lg me-2">Commencer la formation</button>
+            <button class="btn btn-outline-light btn-lg">Voir les cas pratiques</button>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container my-5">
+        <!-- Section Concepts -->
+        <section id="concepts" class="mb-5">
+            <h2 class="text-center mb-4"><i class="fas fa-book me-2"></i>Concepts Fondamentaux</h2>
+            
+            <div class="row">
+                <!-- Cartes concepts -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 concept-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Définition Urbanisation SI</h3>
+                            <p class="card-text">Approche méthodologique pour organiser et faire évoluer un système d'information de manière cohérente avec la stratégie métier.</p>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#urbanisationModal">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 concept-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Architecture d'Entreprise</h3>
+                            <p class="card-text">Discipline qui aligne la stratégie métier, l'organisation et les systèmes d'information pour créer une vision globale et cohérente.</p>
+                            <button class="btn btn-sm btn-outline-primary">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 concept-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Cadres Méthodologiques</h3>
+                            <p class="card-text">TOGAF, Zachman, ArchiMate... Découvrez les frameworks pour structurer votre démarche d'urbanisation.</p>
+                            <button class="btn btn-sm btn-outline-primary">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Cas Pratiques -->
+        <section id="cas-pratiques" class="mb-5">
+            <h2 class="text-center mb-4"><i class="fas fa-bolt me-2"></i>Cas Pratiques - Distribution Électrique</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-danger text-white">
+                            <h3>Mauvaises Pratiques</h3>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Silos informatiques dans un distributeur ouest-africain</h4>
+                            <p class="card-text">Étude de cas sur les conséquences d'une absence d'urbanisation : redondance des données, coûts élevés, inefficacité opérationnelle.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Impact : +40% de coûts IT</li>
+                                <li class="list-group-item">Délais de mise en marché x3</li>
+                                <li class="list-group-item">Satisfaction client en baisse de 35%</li>
+                            </ul>
+                            <button class="btn btn-sm btn-outline-danger">Voir l'étude</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-success text-white">
+                            <h3>Bonnes Pratiques</h3>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Transformation réussie d'un opérateur électrique</h4>
+                            <p class="card-text">Comment une approche d'urbanisation a permis une meilleure gestion du réseau, une réduction des pertes techniques et une amélioration de la facturation.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item">Gain : 15% d'efficacité opérationnelle</li>
+                                <li class="list-group-item">Réduction de 25% des pertes techniques</li>
+                                <li class="list-group-item">ROI en 3 ans</li>
+                            </ul>
+                            <button class="btn btn-sm btn-outline-success">Voir l'étude</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Métriques -->
+        <section id="metriques" class="mb-5">
+            <h2 class="text-center mb-4"><i class="fas fa-chart-line me-2"></i>Métriques Clés</h2>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Indicateurs de Performance</h3>
+                            <canvas id="performanceChart" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">ROI de l'Urbanisation</h3>
+                            <canvas id="roiChart" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope me-2"></i>contact@urbanisation-si-afrique.com</p>
+                    <p><i class="fas fa-phone me-2"></i>+221 77 123 45 67</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Newsletter</h3>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Votre email">
+                            <button class="btn btn-primary" type="submit">S'abonner</button>
+                        </div>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">© 2023 Urbanisation SI Afrique. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="urbanisationModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Urbanisation des SI - Définition Complète</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>L'urbanisation des systèmes d'information est une approche qui s'inspire de l'urbanisme des villes pour organiser, structurer et faire évoluer le système d'information d'une entreprise.</p>
+                    <h6>Principes clés :</h6>
+                    <ul>
+                        <li>Décomposition en zones, quartiers et îlots</li>
+                        <li>Définition claire des interfaces et flux</li>
+                        <li>Gouvernance et règles d'évolution</li>
+                        <li>Alignement avec la stratégie métier</li>
+                    </ul>
+                    <h6>Dans le secteur électrique africain :</h6>
+                    <p>L'urbanisation permet de mieux gérer les systèmes souvent hétérogènes hérités de différentes vagues d'investissements, tout en préparant l'intégration des nouvelles technologies (smart grids, compteurs intelligents, énergies renouvelables).</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

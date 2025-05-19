@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+    background-color: #f8f9fa;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+}
+
+.concept-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animated-section {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Styles de base existants... */
+
+/* Nouveaux styles ajoutés */
+
+/* Icon boxes */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Roadmap list */
+.roadmap-list {
+    list-style-type: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.roadmap-list li {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.roadmap-list li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 3px solid white;
+    z-index: 2;
+}
+
+.roadmap-list li:after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 20px;
+    bottom: -30px;
+    width: 2px;
+    background-color: #dee2e6;
+}
+
+.roadmap-list li:last-child:after {
+    display: none;
+}
+
+/* Simulation cards */
+.sim-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sim-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.sim-card.selected {
+    border: 2px solid var(--primary-color);
+    background-color: rgba(44, 62, 80, 0.05);
+}
+
+/* Accordions */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(44, 62, 80, 0.05);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Table styles */
+.table thead th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+    .roadmap-list li {
+        padding-left: 20px;
+    }
+    
+    .icon-box {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Animation classes */
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
